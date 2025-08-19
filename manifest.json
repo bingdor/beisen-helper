@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "北森魔方",
+  "version": "1.0",
+  "description": "北森考勤小助手",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "*://*.italent.cn/*",
+    "*://cloud.italent.cn/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.italent.cn/portal/convoy/attendance*"
+      ],
+      "js": ["contentScript.js"],
+      "css": ["panel.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://cloud.italent.cn/*"
+      ],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js", "icons/*"],
+      "matches": ["*://*.italent.cn/*"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png"
+  }
+}

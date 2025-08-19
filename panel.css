@@ -1,0 +1,118 @@
+.attendance-panel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 350px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  z-index: 9999;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.attendance-panel.minimized {
+  width: auto;
+  max-height: 50px;
+}
+
+.panel-header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.panel-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.panel-toggle {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.panel-content {
+  padding: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.summary-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat-item {
+  background-color: #f8f9fa;
+  padding: 12px 15px;
+  border-radius: 6px;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #6c757d;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.daily-records {
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #34495e;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.daily-record {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 14px;
+}
+
+.daily-record:last-child {
+  border-bottom: none;
+}
+
+.record-date {
+  color: #34495e;
+}
+
+.record-hours {
+  font-weight: 500;
+}
+
+.short-leave {
+  color: #e67e22;
+}
+
+.normal-day {
+  color: #27ae60;
+}
+
+.panel-footer {
+  padding: 12px 20px;
+  background-color: #f8f9fa;
+  text-align: right;
+  font-size: 12px;
+  color: #6c757d;
+}
