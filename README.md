@@ -3,6 +3,8 @@
 一个用于北森考勤系统的Chrome扩展，可以自动统计和显示考勤数据。
 
 ## 功能特性
+<img width="408" height="699" alt="image" src="https://github.com/user-attachments/assets/769e0554-ccbb-493d-8ddb-1741427edb36" />
+
 
 ### 🎯 核心功能
 - **自动数据拦截**: 自动拦截北森考勤API请求并解析数据
